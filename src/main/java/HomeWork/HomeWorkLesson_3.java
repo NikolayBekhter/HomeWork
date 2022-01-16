@@ -1,15 +1,18 @@
 package HomeWork;
 
 import java.util.Arrays;
+import static java.lang.Math.*;
 
 public class HomeWorkLesson_3 {
     public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
         //invertArray();
         //printArray();
         //changeArray();
         //drawDiagonals();
         //System.out.println(Arrays.toString(oneDimensionalArray(7, 10)));
         //minAndMaxElementsArray();
+        shiftingArrayValues(array, 2);
     }
 
     public static void invertArray() {
@@ -92,7 +95,16 @@ public class HomeWorkLesson_3 {
         System.out.println(max);
     }
 
-    public static void main() {
+    public static void shiftingArrayValues(int[] arrey, int n) {
 
+        if (n >= 0) {
+            for (int i = 0; i < arrey.length; i++) {
+                if (i + n > arrey.length - 1) {
+                    i = abs(arrey.length - (i + n));
+                }
+                arrey[i] = ;
+                System.out.println(arrey);
+            }
+        }
     }
 }
